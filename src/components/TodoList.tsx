@@ -3,10 +3,7 @@ import { Todo } from "../models/Todo";
 import TodoListItem from "./TodoListItem";
 
 const TodoList = () => {
-  const todos: Todo[] = [
-    { id: 1, title: "Ir ao supermercado", done: false },
-    { id: 2, title: "Ir a academia", done: true },
-  ];
+  const todos: Todo[] = [];
 
   return (
     <table className="uk-table">
