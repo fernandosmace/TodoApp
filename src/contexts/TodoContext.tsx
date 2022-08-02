@@ -27,20 +27,17 @@ const TodoProvider = (props: any) => {
       done: false,
     };
     setTodos([...todos, todo]);
-    save(todos);
   };
   const removeTodo = (todo: Todo) => {
     const index = todos.indexOf(todo);
 
     setTodos(todos.filter((_, i) => i !== index));
-    save(todos);
   };
 
   const toggle = (todo: Todo) => {
     const index = todos.indexOf(todo);
     todos[index].done = !todo.done;
     setTodos([...todos]);
-    save(todos);
   };
 
   return (
